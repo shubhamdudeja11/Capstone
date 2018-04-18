@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog">
+
+    <EditText
+        android:id="@+id/editTextDialogFieldView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Field of View" />
+
+    <EditText
+        android:id="@+id/editTextDialogAnother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextDialogFieldView"
+        android:layout_below="@+id/editTextDialogFieldView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Another Paramter" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCameraDialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_below="@+id/editTextDialogAnother"
+        android:background="@null"
+        android:padding="2dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/dialogok" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCameraDialog2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextDialogAnother"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/imageButtonCameraDialog"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/dialogcancel" />
+
+</RelativeLayout>

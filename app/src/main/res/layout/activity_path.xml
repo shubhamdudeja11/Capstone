@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.umarpreet.capstone.PathActivity"
+    android:background="@drawable/pathbackground">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Path Maker"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/fontHome"
+        android:textSize="25dp" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_marginTop="230dp"
+        tools:context="com.umarpreet.capstone.PathActivity"
+        ></fragment>
+
+    <ImageButton
+        android:id="@+id/imageButtonTuneCamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/camera2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButtonTuneCamera"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Tune Camera"
+        android:textAlignment="center"
+        android:textColor="@color/fontm"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSetOverlap"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginStart="22dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/overlap2"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/imageButtonSetOverlap"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Image Overlap"
+        android:textAlignment="center"
+        android:textColor="@color/fontm"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonStartPathMake"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView13"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@drawable/start"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonStopPathMake"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageButtonStartPathMake"
+        android:layout_toEndOf="@+id/imageButtonStartPathMake"
+        android:background="@null"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/stop" />
+
+
+</RelativeLayout>

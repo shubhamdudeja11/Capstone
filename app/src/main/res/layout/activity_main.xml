@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.umarpreet.capstone.MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Welcome Home"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/fontHome"
+        android:textSize="25dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonMapSelect"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:layout_toStartOf="@+id/textView"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/googlemaps" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButtonMapSelect"
+        android:layout_below="@+id/imageButtonMapSelect"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Select Area"
+        android:textColor="@color/fontHome"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTreeSelect"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/talltree" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonTreeSelect"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Select Special Areas"
+        android:textAlignment="center"
+        android:textColor="@color/fontHome"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPathFind"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/textView3"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/path"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButtonPathFind"
+        android:layout_below="@+id/imageButtonPathFind"
+        android:text="Find Path"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/fontHome"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonSelectCopter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageButtonMapSelect"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/droneselect"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/imageButtonSelectCopter"
+        android:text="Select Copter"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/fontm"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonManuallyFly"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imageButtonSelectCopter"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/remote"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonManuallyFly"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Fly Manually"
+        android:textAlignment="center"
+        android:textColor="@color/fontm"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFollowPath"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/imageButtonManuallyFly"
+        app:srcCompat="@drawable/automode"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButtonFollowPath"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Follow A Path"
+        android:textAlignment="center"
+        android:textColor="@color/fontm"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCropSelect"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageButtonSelectCopter"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/croprice"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/imageButtonCropSelect"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Crop Details"
+        android:textAlignment="center"
+        android:textColor="@color/font2"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAnalyzeImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageButtonManuallyFly"
+        android:layout_alignTop="@+id/imageButtonCropSelect"
+        app:srcCompat="@drawable/seeimg"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/imageButtonAnalyzeImg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Analyze Images"
+        android:textAlignment="center"
+        android:textColor="@color/font2"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGetResult"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageButtonFollowPath"
+        android:layout_alignTop="@+id/imageButtonAnalyzeImg"
+        app:srcCompat="@drawable/resultgen"
+        android:background="@null"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/textView7"
+        android:text="Get Results"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/font2"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewWifiInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="18dp"
+        android:text="Sample" />
+
+    <TextView
+        android:id="@+id/textViewAreaInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewWifiInfo"
+        android:layout_below="@+id/textViewWifiInfo"
+        android:text="TextView" />
+
+</RelativeLayout>
